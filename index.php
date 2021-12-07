@@ -23,11 +23,17 @@
         foreach ($reader as $row) {
             ?>
             <div class="card" style="width: 18rem;">
-            <img src='/images/<?php echo $row['image'] ?>' class="card-img-top" alt='salo'>
-            <div class="card-body">
-                <h5 class="card-title"><?php echo $row['name'] ?></h5>
-                <p class="card-text"><?php echo $row ['description']; ?></p>
-            </div>
+                <img src='/images/<?php echo $row['image'] ?>' class="card-img-top" alt='salo'>
+                <div class="card-body">
+                    <h5 class="card-title"><?php echo $row['name'] ?></h5>
+                    <p class="card-text"><?php echo $row ['description']; ?></p>
+                </div>
+                <td>
+                    <div class="d-flex">
+                        <a href="update.php?update_id=<?php echo $row['id']; ?> " class="btn btn-warning">Edit</a>
+                        <a href="?delete_id=<?php echo $row['id']; ?> " class="btn btn-danger">Delete</a>
+                   </div>
+                </td>
             </div>
             <?php
         }

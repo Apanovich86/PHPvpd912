@@ -13,3 +13,18 @@
 .card {
     margin-bottom: 20px;
 }
+
+d-grid {
+    padding: 20px;
+}
+.d-flex {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+.edit{
+    background: #14af40;
+}
+.delete{
+    background: rgba(232, 59, 59, 0.86);
+}
